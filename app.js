@@ -7,7 +7,7 @@ const app = express(); //สร้างserver
 app.use(express.json());
 
 app.use("/todos", todoRoute); //ถ้ามีpath /todos คือให้มาทำงานที่File todoRoute
-//app.use('/todos/,)
+//app.use('/users/,userRoute)
 
 
 app.use((err, req, res, next) => {
